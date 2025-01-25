@@ -161,6 +161,7 @@ img {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -295,7 +296,7 @@ img {
 }
 
 .team-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 
 .portfolio-list {
@@ -318,26 +319,23 @@ img {
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.overlay-text {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #4d5ae5;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover .portfolio-overlay {
-  transform: translateY(0%);
-}
-
-.overlay-text {
+  background-color: #4d5ae5;
   padding: 40px 32px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .overlay-text {
+  transform: translateY(0%);
 }
 
 .card-content {
@@ -354,6 +352,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-info {
@@ -405,5 +404,5 @@ img {
 }
 
 .socials-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
